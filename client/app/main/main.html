@@ -11,9 +11,9 @@
 </header>
 
 <div class="container">
+  <br/>
   <div class="row">
-    <h1>ng-cat.... not just an hair-eater :)</h1>
-    <div class="col-sm-2 well well-sm">
+    <div class="col-sm-12 well well-sm">
 
       <!-- show here list of available libraries -->
       <h3>Available Modules</h3>
@@ -24,53 +24,57 @@
       </ul>
 
     </div>
-    <div class="col-sm-10 well well-sm">
-      <h4>Social buttons</h4>
+  </div>
+  <div class="row">
+    <h2>Social buttons</h2>
+    <div class="col-sm-12 well well-sm">
       <ul>
         <li>Twitter: <twitter-button></twitter-button></li>
         <li>Facebook: <facebook-button></facebook-button></li>
         <li>Google Plus: <gplus-button action="share" annotation="bubble"></gplus-button></li>
       </ul>
-      <h4>Simple Editor</h4>
+    </div>
+
+    <h2>Simple Editor</h2>
+    <div class="col-sm-12 well well-sm">
       <div editable ng-model="mainContent"></div>
+    </div>
 
+    <h2>Phone Prefix</h2>
+    <div class="col-sm-12 well well-sm">
+      <div input-phone default-country='GB'></div>
+    </div>
 
-      <h4>Simple Table</h4>
-      <div class="row">
-        <div input-phone default-country='GB'></div>
-      </div>
-
-      <br/>
-      <ng-table class="jumbotron" items="items" headers="headers" paginator="paginator" checkboxes="true">
-
-      </ng-table>
+    <h2>Simple Table</h2>
+    <div class="col-sm-12 well well-sm">
+      <ng-table class="well well-sm" items="items" headers="headers" paginator="paginator" checkboxes="true"></ng-table>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">Features:</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
-        <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="deleteThing(thing)">&times;</button></a></li>
-      </ul>
-    </div>
-  </div>
+  <!--<div class="row">-->
+    <!--<div class="col-lg-12">-->
+      <!--<h1 class="page-header">Features:</h1>-->
+      <!--<ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">-->
+        <!--<li><a href="#" tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="deleteThing(thing)">&times;</button></a></li>-->
+      <!--</ul>-->
+    <!--</div>-->
+  <!--</div>-->
 
-  <form class="thing-form">
-    <label>Syncs in realtime across clients</label>
-    <p class="input-group">
-      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="newThing">
-      <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>
-      </span>
-    </p>
-  </form>
-</div>
+  <!--<form class="thing-form">-->
+    <!--<label>Syncs in realtime across clients</label>-->
+    <!--<p class="input-group">-->
+      <!--<input type="text" class="form-control" placeholder="Add a new thing here." ng-model="newThing">-->
+      <!--<span class="input-group-btn">-->
+        <!--<button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>-->
+      <!--</span>-->
+    <!--</p>-->
+  <!--</form>-->
+<!--</div>-->
 
 <footer class="footer">
   <div class="container">
-      <p>Angular Fullstack v2.0.13 |
-        <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
-         <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+      <p>ng Cat library v0.1.0 |
+        <a href="https://twitter.com/CavaliereDavide">@CavaliereDavide</a> |
+         <a href="https://github.com/davidecavaliere/ng-cat/issues">Issues</a></p>
   </div>
 </footer>
