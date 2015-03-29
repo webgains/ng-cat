@@ -2,6 +2,9 @@
 
 angular.module('ngCatApp')
   .controller('MainCtrl', function ($scope, $http, socket, gPlusSerivce) {
+
+    $scope.mainContent = 'This is an editable div';
+
     $scope.awesomeThings = [];
 
     $http.get('/api/things').success(function(awesomeThings) {
