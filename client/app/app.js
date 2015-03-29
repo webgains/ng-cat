@@ -7,7 +7,8 @@ angular.module('ngCatApp', [
   'btford.socket-io',
   'ui.router',
   'ui.bootstrap',
-  'ui.socialButtons'
+  'ui.socialButtons',
+  'ui.simpleEditor'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider
