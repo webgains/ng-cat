@@ -5,6 +5,17 @@ angular.module('ngCatApp')
 
     $scope.mainContent = 'This is an editable div';
 
+    $scope.items = [{A:'A', B:'a'}, {A: 'B', B:'b'}, {A:'C', B:'c'}, {A:'D', B:'d'}];
+    for (var i=0; i<100; i++) {
+      $scope.items.push({A : i, B: '_' + i});
+    }
+    $scope.headers = ['A', 'B'];
+
+    $scope.paginator = {
+      totalItems : $scope.items.length,
+      itemsPerPage : 20
+    }
+
     $scope.awesomeThings = [];
 
     $http.get('/api/things').success(function(awesomeThings) {

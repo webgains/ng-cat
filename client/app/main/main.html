@@ -18,6 +18,7 @@
       <ul>
         <li>Social Buttons</li>
         <li>Simple Editor</li>
+        <li>Simple Table</li>
       </ul>
 
     </div>
@@ -30,6 +31,17 @@
       </ul>
       <h4>Simple Editor</h4>
       <div editable ng-model="mainContent"></div>
+
+
+      <h4>Simple Table</h4>
+      <div class="row">
+        <div input-phone default-country='GB'></div>
+      </div>
+
+      <br/>
+      <ng-table class="jumbotron" items="items" headers="headers" paginator="paginator" checkboxes="true">
+
+      </ng-table>
     </div>
   </div>
 
