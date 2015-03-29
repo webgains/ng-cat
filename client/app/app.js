@@ -8,7 +8,8 @@ angular.module('ngCatApp', [
   'ui.router',
   'ui.bootstrap',
   'ui.socialButtons',
-  'ui.simpleEditor'
+  'ui.simpleEditor',
+  'ui.simpleTable'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
     $urlRouterProvider
