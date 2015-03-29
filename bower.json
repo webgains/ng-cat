@@ -4,21 +4,43 @@
   "dependencies": {
     "angular": ">=1.2.*",
     "json3": "~3.3.1",
-    "es5-shim": "~3.0.1",
     "jquery": "~1.11.0",
-    "bootstrap-sass-official": "~3.1.1",
-    "bootstrap": "~3.1.1",
     "angular-resource": ">=1.2.*",
     "angular-cookies": ">=1.2.*",
-    "angular-sanitize": ">=1.2.*",
+    "angular-sanitize": ">=1.2.*"
+  },
+  "devDependencies": {
+    "es5-shim": "~3.0.1",
+    "angular-mocks": ">=1.2.*",
+    "angular-scenario": ">=1.2.*",
+    "bootstrap-sass-official": "~3.1.1",
+    "bootstrap": "~3.1.1",
     "angular-bootstrap": "~0.11.0",
     "font-awesome": ">=4.1.0",
     "lodash": "~2.4.1",
     "angular-socket-io": "~0.6.0",
     "angular-ui-router": "~0.2.10"
   },
-  "devDependencies": {
-    "angular-mocks": ">=1.2.*",
-    "angular-scenario": ">=1.2.*"
-  }
+  "homepage": "https://github.com/davidecavaliere/angular-social-buttons",
+  "authors": [
+    "Davide Cavaliere <cavaliere.davide@gmail.com>"
+  ],
+  "description": "collection of handy angularjs modules",
+  "main": "lib/ng-cat.js",
+  "keywords": [
+    "angularjs",
+    "modules"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client",
+    "client/bower_components",
+    "e2e",
+    "server",
+    "test",
+    "tests"
+  ]
 }
