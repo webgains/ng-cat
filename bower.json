@@ -21,7 +21,7 @@
     "angular-socket-io": "~0.6.0",
     "angular-ui-router": "~0.2.10"
   },
-  "homepage": "https://github.com/davidecavaliere/angular-social-buttons",
+  "homepage": "https://github.com/davidecavaliere/ng-cat",
   "authors": [
     "Davide Cavaliere <cavaliere.davide@gmail.com>"
   ],
