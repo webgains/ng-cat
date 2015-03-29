@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ngCatApp')
-  .controller('MainCtrl', function ($scope, $http, socket) {
+  .controller('MainCtrl', function ($scope, $http, socket, gPlusSerivce) {
     $scope.awesomeThings = [];
 
     $http.get('/api/things').success(function(awesomeThings) {
