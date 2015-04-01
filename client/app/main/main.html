@@ -25,10 +25,26 @@
 
       <!-- show here list of available libraries -->
       <h2>Available Modules</h2>
-      <ul class="list-group">
-        <li class="list-group-item">Social Buttons</li>
-        <li class="list-group-item">Simple Editor</li>
-        <li class="list-group-item">Simple Table</li>
+      <ul class="list-group" ng-init="socialButtons = false; simpleEditor = false; simpleTable = false">
+        <li class="list-group-item" ng-click="socialButtons = !socialButtons; simpleEditor = false; simpleTable = false;">
+          Social Buttons
+          <div ng-show="socialButtons" class="well">
+            <btf-markdown ng-include="'/lib/socialButtons/README.md'"></btf-markdown>
+          </div>
+        </li>
+        <li class="list-group-item" ng-click="simpleEditor = !simpleEditor;socialButtons = false; simpleTable = false;">
+          Simple Editor
+          <div ng-show="simpleEditor" class="well">
+            <btf-markdown ng-include="'/lib/socialButtons/README.md'"></btf-markdown>
+          </div>
+        </li>
+        <li class="list-group-item" ng-click="simpleTable = !simpleTable; socialButtons = false; simpleEditor = false;">
+          Simple Table
+          <div ng-show="simpleTable">
+            <btf-markdown ng-include="'/lib/socialButtons/README.md'"></btf-markdown>
+          </div>
+
+        </li>
       </ul>
 
     </div>
