@@ -7,6 +7,7 @@ angular.module('ngCatApp', [
   'btford.socket-io',
   'ui.router',
   'ui.bootstrap',
+  'btford.markdown',
   'ui.socialButtons',
   'ui.simpleEditor',
   'ui.simpleTable'
